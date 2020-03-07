@@ -1,0 +1,176 @@
+*, *:befor. *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    font-family: droid_serifregular;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+} 
+main {
+    flex-grow: 1;    
+}
+main, header, footer {
+    width: 100%;
+}
+
+/* розділення шаблона від тіла программи ======== */
+/* ============================================= */
+.header {
+    height: 100vh;
+    background-color: #e62117;
+}
+.main {
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+
+
+
+/* footer***************************************** */
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #E60023;
+}
+
+    /*========== social ===========*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.basement-social {
+    display: flex;    
+    justify-content: flex-end;
+    width: 100%;
+    text-align: right;
+    margin: 190px 125px 0 0;
+    max-height: 80px;
+    font-size: 2em;
+}
+ul.submenu {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  /* padding: 10px; */
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #ccc;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 200%;
+  width: 200%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-twitter::after {
+  height: 200%;
+  width: 200%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-pinterest::after {
+  height: 200%;
+  width: 200%;
+  background-color: #E60023;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 200%;
+  width: 200%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-youtube::after {
+  height: 200%;
+  width: 200%;
+  background-color: #e62117;
+  border-radius: 0px;
+  opacity: 1;
+}
+/*************************************************************/
+/* END FOOTER                                                    */
+/*************************************************************/
+@media screen and (max-width: 1320px) {
+    .conteiner-all_section-chenger {
+       flex-wrap: wrap; 
+    }
+    .conteiner-all_section-chenger img, .forth_section-pillar img {
+        width: 20px;
+        height: 150px;
+    }
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .conteiner-all_section-chenger {
+       flex-wrap: wrap; 
+    }
+    .conteiner-all_section-chenger img, .forth_section-pillar img {
+        width: 50px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 968px) {
+    .conteiner-all_section-chenger {
+       flex-wrap: wrap; 
+    }
+    .conteiner-all_section-chenger img, .forth_section-pillar img {
+        width: 50px;
+        height: 156px;
+    }
+    .text_all_section-chenger-forth h2, .text_all_section-chenger-forth p{
+        padding-left: 100px;
+    }
+}
+/*
+@media screen and (max-width: 420px) {
+   .conteiner-all_section-chenger img, .forth_section-pillar img {
+        flex-wrap: wrap;
+        width: 55px;
+        height: 78px;
+    }
+}
