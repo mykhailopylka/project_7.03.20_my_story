@@ -14,7 +14,7 @@
       rel="stylesheet"
       type="text/css"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />    
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="fonts/font.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -23,9 +23,9 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="js/script.js"></script>
   </head>
   <body>
+    <!-- <script src="js/script.js"></script> -->
     <!-- JS slick slider -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -35,16 +35,16 @@
       <div class="conteiner">
         <!-- header-top  -->
         <div class="header-top">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
           <div class="header-btn">
             <div class="header-btn__menus">
               ≡
             </div>
           </div>
-          <div class="logo">
-            <a href="#">
-              <img src="img/logo.png" alt="logo" />
-            </a>
-          </div>          
         </div>
         <!-- Вспливаюче меню зліва header -->
         <nav class="menu">
@@ -60,24 +60,7 @@
               </ul>
             </div>
           </div>
-        </nav>
-        <!-- Слайдер -->
-        <section class="slider-top">
-          <div class="slider">
-            <div
-              class="slider__item"
-              style="background-image: url(img/slider/slide-1.jpg);"
-            ></div>
-            <div
-              class="slider__item"
-              style="background-image: url(img/slider/slide-2.jpg);"
-            ></div>
-            <div
-              class="slider__item"
-              style="background-image: url(img/slider/slide-3.jpg);"
-            ></div>
-          </div>
-        </section>
+        </nav>        
         <!-- Центральна svg -->
         <div id="svgContainer"></div>
           <script src="js/lottie.js"></script>
@@ -86,14 +69,245 @@
         <!-- /conteiner -->
       </div>
     </header>
+    <!-- Слайдер -->
+    <section class="slider-top">
+      <div class="slider">
+        <div
+          class="slider__item"
+          style="background-image: url(img/slider/slide-1.jpg);"
+        ></div>
+        <div
+          class="slider__item"
+          style="background-image: url(img/slider/slide-2.jpg);"
+        ></div>
+        <div
+          class="slider__item"
+          style="background-image: url(img/slider/slide-3.jpg);"
+        ></div>
+      </div>
+    </section>
     <main class="main">
       <div class="conteiner">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
-          accusantium saepe tenetur quam et ipsum illum hic ad commodi, eum
-          numquam reprehenderit deleniti? Culpa dolores autem natus quam
-          reprehenderit accusamus.
-        </p>
+        <conteiner class="main-article">
+          <div id="about" class="main-article__discribe">
+            <div class="conteiner-all">
+              <div class="text_all_section-chenger">
+                <h2>
+                  About
+                </h2>
+                <p>
+                  Out here, you’re bound to find a story around each and every
+                  corner – not to mention a teller or two. You’ll uncover them
+                  as you move through all of the bays, bights, and tickles of
+                  this place. Here are a few Hand-Picked Tales to send you on
+                  your way.
+                </p>
+              </div>
+              <div class="conteiner-all_section-chenger">
+                <a href="#">
+                  <img src="img/a-tangled-tale.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/msit-nokmaq.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img
+                    src="img/the-secret-language-of-clotheslines.jpg"
+                    alt="photo"
+                  />
+                </a>
+                <a href="#">
+                  <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
+                </a>
+              </div>
+            </div>
+          </div>
+                    <!----conteiner-second_section transition---------------->
+                    <div
+                    id="article_2"
+                    class="main-article__discribe  second_section transition"
+                    onmouseover="changeItem2()"
+                    onmouseout="rechangeItem2()"
+                  >
+                    <div class="conteiner-all">
+                      <div class="text_all_section-chenger">
+                        <h2>
+                          Article_2
+                        </h2>
+                        <p>
+                          Out here, you’re bound to find a story around each and every
+                          corner – not to mention a teller or two. You’ll uncover them
+                          as you move through all of the bays, bights, and tickles of
+                          this place. Here are a few Hand-Picked Tales to send you on
+                          your way.
+                        </p>
+                      </div>
+                      <div class="conteiner-all_section-chenger">
+                        <a href="#">
+                          <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
+                        </a>
+                        <a href="#">
+                          <img src="img/the-stuff-of-stories.jpg" alt="photo" />
+                        </a>
+                        <a href="#">
+                          <img src="img/the-viking-ghost.jpg" alt="photo" />
+                        </a>
+                        <a href="#">
+                          <img src="img/bacon-cove.jpg" alt="photo" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!----therd_section---------------->
+          <div
+          id="article_3"
+          class="main-article__discribe therd_section transition"
+          onmouseover="changeItem3()"
+          onmouseout="rechangeItem3()"
+        >
+          <div class="conteiner-all">
+            <div class="text_all_section-chenger">
+              <h2>
+                Article_3
+              </h2>
+              <p>
+                Out here, you’re bound to find a story around each and every
+                corner – not to mention a teller or two. You’ll uncover them
+                as you move through all of the bays, bights, and tickles of
+                this place. Here are a few Hand-Picked Tales to send you on
+                your way.
+              </p>
+            </div>
+            <div class="conteiner-all_section-chenger">
+              <a href="#">
+                <img src="img/a-tangled-tale.jpg" alt="photo" />
+              </a>
+              <a href="#">
+                <img src="img/msit-nokmaq.jpg" alt="photo" />
+              </a>
+              <a href="#">
+                <img
+                  src="img/the-secret-language-of-clotheslines.jpg"
+                  alt="photo"
+                />
+              </a>
+              <a href="#">
+                <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
+              </a>
+            </div>
+          </div>
+        </div>
+         <!----forth_section---------------->
+         <div
+         id="article_4"
+         class="main-article__discribe forth_section transition"
+         onmouseover="changeItem4()"
+         onmouseout="rechangeItem4()"
+       >
+         <!------------------>
+         <div class="forth_section-pillar">
+           <ul>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_09.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_08.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_07.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_06.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_05.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_04.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_03.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_02.jpg" class="scale" />
+               </a>
+             </li>
+             <li>
+               <a href="#" class="scale">
+                 <img src="img/img_01/img_01.jpg" class="scale" />
+               </a>
+             </li>
+           </ul>
+         </div>
+         <div class="text_all_section-chenger-forth">
+           <h2>
+             Article_4
+           </h2>
+           <p>
+             Out here, you’re bound to find a story around each and every
+             corner – not to mention a teller or two. You’ll uncover them as
+             you move through all of the bays, bights, and tickles of this
+             place. Here are a few Hand-Picked Tales to send you on your way.
+           </p>
+         </div>
+       </div>
+            <!----fifth_section---------------->
+            <div
+            id="article_5"
+            class="main-article__discribe fifth_section transition"
+          >
+            <div class="conteiner-all">
+              <div class="text_all_section-chenger">
+                <h2>
+                  Article_5
+                </h2>
+                <p>
+                  Out here, you’re bound to find a story around each and every
+                  corner – not to mention a teller or two. You’ll uncover them
+                  as you move through all of the bays, bights, and tickles of
+                  this place. Here are a few Hand-Picked Tales to send you on
+                  your way.
+                </p>
+              </div>
+              <div class="conteiner-all_section-chenger">
+                <a href="#">
+                  <img
+                    src="img/the-secret-language-of-clotheslines.jpg"
+                    alt="photo"
+                  />
+                </a>
+                <a href="#">
+                  <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/the-stuff-of-stories.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/the-viking-ghost.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/bacon-cove.jpg" alt="photo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </conteiner>
+      <!-- /conteiner -->
       </div>
     </main>
     <footer role="downside" class="footer">

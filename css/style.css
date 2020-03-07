@@ -30,14 +30,22 @@ body {
 /* розділення шаблона від тіла программи ======== */
 /* ============================================= */
 /* HEADER====================== */
+.header {
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+    left: 0;
+    right: 0;
+  }
 .conteiner {
     width: 1200px;
     margin: 0 auto;
 }
 .header-top {
-display: flex;
-justify-content: space-between;
-max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100vh;
+    height: 100%;
 }
 .header-btn {
     padding: 20px 0 0 20px;
@@ -56,23 +64,20 @@ max-height: 100vh;
     background-color: #000000;
     position: absolute;
     top: 0;
-    left: 0%;
+    left: -100%;
     width: 100%;
     transition: all 0.5s;
     z-index: 2;
   }
   /* .manu.active - технічний елемент для JS: при натисканні на піктограму меню, виовдить його в видиму зону */
   .menu.active {
-    left: 100%;
-  }
-  .conteiner-menu {
-    position: relative;
+    left: 0;
   }
   .close-btn {
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 15px;
+    right: 7.7em;
     top: 31px;
     cursor: pointer;
   }
@@ -124,7 +129,7 @@ max-height: 100vh;
 }
 /* slick slider =============================== */
 .slider__item {
-    height: 100vh;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -156,13 +161,176 @@ max-height: 100vh;
   }
 /* MAIN======================= */
 .main {
-    height: 100vh;
+    margin-top: 100px;
 }
-
-
-
-
-
+/* main-article */
+.main-article__discribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    transition: transform 0.25s ease-in-out 0.5s;
+}
+.conteiner-all {
+    width: 85%;    
+}
+.text_all_section-chenger {
+    display: flex;
+    flex-direction: column;    
+    max-width: 38%;
+    max-height: 80vh;
+    flex-wrap: wrap;
+}
+.conteiner-all_section-chenger {
+    display: flex;
+    justify-content: space-between;   
+    width: 100%;
+}
+.conteiner-all_section-chenger img {
+    width: 8em;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.25s ease-in-out 0s;    
+}
+.conteiner-all_section-chenger img:hover{    
+    transform: scale(1.1);    
+}
+.transition {
+    transition: .2s;
+}
+/* second_section **************************************************/
+.second_section {
+    width: 100%;
+    margin-top: 0;
+}
+.second_section:hover {
+background: rgba(8,45,47,.2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.second_section:hover ~ * {
+background: rgba(8,45,47,.2);
+}
+.second_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(8,45,47,.2);
+  pointer-events: none;
+  z-index: -1;
+}
+/* therd_section **************************************************/
+.therd_section {
+    width: 100%;
+    margin-top: 0;
+}
+.therd_section:hover {
+background: rgba(77,85,71, .2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.therd_section:hover ~ * {
+background: rgba(77,85,71, .2);
+}
+.therd_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(77,85,71, .2);
+  pointer-events: none;
+  z-index: -1;
+}
+/* forth_section **************************************************/
+.forth_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+}
+.forth_section:hover {
+background: rgba(103,97,58, .2);
+}
+/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
+.forth_section:hover ~ * {
+background: rgba(103,97,58, .2);
+}
+.forth_section:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(103,97,58, .2);
+  pointer-events: none;
+  z-index: -1;
+}
+/*  **************************************************/
+.forth_section-pillar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1.32;
+    margin-left: 100px;
+}
+.forth_section-pillar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.forth_section-pillar ul, li {
+    list-style-type: none;
+}
+.forth_section-pillar img {
+    width: 220px;
+    height: 320px;
+    transition: .3s ease-in-out 0s;
+}
+.text_all_section-chenger-forth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 2.04;
+}
+.text_all_section-chenger-forth h2, .text_all_section-chenger-forth p{
+    width: 60%;
+    padding-left: 200px;
+}
+/* ефект лінування **************************************************/
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */ 
+    width: 5.3em;
+    height: 8em;
+}
+.scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */       
+}
+/* fifth_section **************************************************/
+.fifth_section {
+    width: 100%;
+    margin-top: 0;
+}
 /* footer***************************************** */
 
 .footer {
@@ -171,94 +339,106 @@ max-height: 100vh;
 }
 
     /*========== social ===========*/
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-.basement-social {
-    display: flex;    
-    justify-content: flex-end;
-    width: 100%;
-    text-align: right;
-    margin: 190px 125px 0 0;
-    max-height: 80px;
-    font-size: 2em;
-}
-ul.submenu {
-  border-radius: 5px;
-  display: inline-block;
-  padding: 4px 10px;
-  margin: 0;
-  overflow: hidden;
-}
-ul.submenu li {
-  display: inline-block;
-}
-ul.submenu li a i.fa {
-  /* padding: 10px; */
-  display: inline-block;
-  border: 1px solid transparent;
-  color: #ccc;
-  height: 30px;
-  width: 30px;
-  border-radius: 50px;
-  margin: 10px;
-  text-align: center;
-  line-height: 30px;
-  position: relative;
-  z-index: 2;
-}
-ul.submenu li a i.fa::after {
-  content: "";
-  height: 0%;
-  width: 0%;
-  position: absolute;
-  top: -500%;
-  bottom: -500%;
-  left: -500%;
-  right: -500%;
-  margin: auto;
-  border: 0px solid transparent;
-  border-radius: 200px;
-  opacity: 0;
-  z-index: -1;
-  transition: all ease 0.5s;
-}
-ul.submenu li a:hover i.fa::before {
-  color: #fff;
-}
-ul.submenu li a:hover i.fa-facebook::after {
-  height: 200%;
-  width: 200%;
-  background-color: #3b5998;
-  border-radius: 0px;
-  opacity: 1;
-}
-ul.submenu li a:hover i.fa-twitter::after {
-  height: 200%;
-  width: 200%;
-  background-color: #1dcaff;
-  border-radius: 0px;
-  opacity: 1;
-}
-ul.submenu li a:hover i.fa-pinterest::after {
-  height: 200%;
-  width: 200%;
-  background-color: #E60023;
-  border-radius: 0px;
-  opacity: 1;
-}
-ul.submenu li a:hover i.fa-instagram::after {
-  height: 200%;
-  width: 200%;
-  background-color: #8a3ab9;
-  border-radius: 0px;
-  opacity: 1;
-}
-ul.submenu li a:hover i.fa-youtube::after {
-  height: 200%;
-  width: 200%;
-  background-color: #e62117;
-  border-radius: 0px;
-  opacity: 1;
-}
+    @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+    .basement-social {
+        display: flex;    
+        justify-content: flex-end;
+        width: 100%;
+        text-align: right;
+        margin: 190px 125px 0 0;
+        max-height: 80px;
+        font-size: 2em;
+    }
+    ul.submenu {
+      border-radius: 5px;
+      display: inline-block;
+      padding: 4px 10px;
+      margin: 0;
+      overflow: hidden;
+    }
+    ul.submenu li {
+      display: inline-block;
+    }
+    ul.submenu li a i.fa {
+      padding: 10px;
+      display: inline-block;
+      border: 1px solid transparent;
+      color: #ccc;
+      height: 30px;
+      width: 30px;
+      border-radius: 50px;
+      margin: 10px;
+      text-align: center;
+      line-height: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    ul.submenu li a i.fa::after {
+      content: "";
+      height: 0%;
+      width: 0%;
+      position: absolute;
+      top: -500%;
+      bottom: -500%;
+      left: -500%;
+      right: -500%;
+      margin: auto;
+      border: 0px solid transparent;
+      border-radius: 200px;
+      opacity: 0;
+      z-index: -1;
+      transition: all ease 0.5s;
+    }
+    ul.submenu li a:hover i.fa::before {
+      color: #fff;
+    }
+    ul.submenu li a:hover i.fa-facebook::after {
+      height: 200%;
+      width: 200%;
+      background-color: #3b5998;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    ul.submenu li a:hover i.fa-twitter::after {
+      height: 200%;
+      width: 200%;
+      background-color: #1dcaff;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    ul.submenu li a:hover i.fa-pinterest::after {
+      height: 200%;
+      width: 200%;
+      background-color: #E60023;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    ul.submenu li a:hover i.fa-instagram::after {
+      height: 200%;
+      width: 200%;
+      background-color: #8a3ab9;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    ul.submenu li a:hover i.fa-youtube::after {
+      height: 200%;
+      width: 200%;
+      background-color: #e62117;
+      border-radius: 0px;
+      opacity: 1;
+    }
+    /*************************************************************/
+    /* END FOOTER                                                    */
+    /*************************************************************/
+    @media screen and (max-width: 1320px) {
+        .conteiner-all_section-chenger {
+           flex-wrap: wrap; 
+        }
+        .conteiner-all_section-chenger img, .forth_section-pillar img {
+            width: 20px;
+            height: 150px;
+        }
+    }
 /*************************************************************/
 /* END FOOTER                                                    */
 /*************************************************************/
