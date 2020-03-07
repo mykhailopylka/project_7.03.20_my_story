@@ -9,15 +9,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!--load all styles Font Awesome-->
     <link
       rel="stylesheet"
       type="text/css"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />
-    <!--load all styles Font Awesome-->
+    />    
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="fonts/font.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <title>Моя історія</title>
     <!--[if lt IE 9]>
       <script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
@@ -25,29 +26,77 @@
     <script src="js/script.js"></script>
   </head>
   <body>
+    <!-- JS slick slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- /JS -->
     <header class="header">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aut
-        voluptatem excepturi doloribus molestias architecto magnam delectus
-        quos, corrupti, facere recusandae asperiores autem blanditiis
-        consequuntur laboriosam dicta vero minus possimus.
-      </p>
+      <div class="conteiner">
+        <!-- header-top  -->
+        <div class="header-top">
+          <div class="header-btn">
+            <div class="header-btn__menus">
+              ≡
+            </div>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>          
+        </div>
+        <!-- Вспливаюче меню зліва header -->
+        <nav class="menu">
+          <div class="conteiner conteiner-menu">
+            <div class="close-btn"></div>
+            <div class="menu__list">
+              <ul>
+                <li><a href="#">Стаття 1</a></li>
+                <li><a href="#">Стаття 2</a></li>
+                <li><a href="#">Стаття 3</a></li>
+                <li><a href="#">Стаття 4</a></li>
+                <li><a href="#">Контаки</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Слайдер -->
+        <section class="slider-top">
+          <div class="slider">
+            <div
+              class="slider__item"
+              style="background-image: url(img/slider/slide-1.jpg);"
+            ></div>
+            <div
+              class="slider__item"
+              style="background-image: url(img/slider/slide-2.jpg);"
+            ></div>
+            <div
+              class="slider__item"
+              style="background-image: url(img/slider/slide-3.jpg);"
+            ></div>
+          </div>
+        </section>
+        <!-- Центральна svg -->
+        <div id="svgContainer"></div>
+          <script src="js/lottie.js"></script>
+          <script src="js/script.js"></script>
+        </div>
+        <!-- /conteiner -->
+      </div>
     </header>
     <main class="main">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus
-        eveniet dolore similique iusto, id perferendis ducimus molestiae, modi
-        doloremque neque cupiditate deserunt est, possimus vitae non error quo
-        consequuntur!
-      </p>
+      <div class="conteiner">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+          accusantium saepe tenetur quam et ipsum illum hic ad commodi, eum
+          numquam reprehenderit deleniti? Culpa dolores autem natus quam
+          reprehenderit accusamus.
+        </p>
+      </div>
     </main>
     <footer role="downside" class="footer">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        laudantium totam earum quod omnis eaque tempora suscipit voluptates ex
-        blanditiis, voluptate reiciendis dicta fugit iusto? Quisquam assumenda
-        quidem in nam!
-      </p>
       <!-- social -->
       <div class="basement-social">
         <ul class="submenu">
@@ -69,6 +118,7 @@
         </ul>
       </div>
       <!-- /social -->
+      <!-- /body-color -->
     </footer>
   </body>
 </html>

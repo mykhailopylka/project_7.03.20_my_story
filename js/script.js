@@ -1,31 +1,20 @@
-/* logo ===========================
-document.getElementById('logo').onclick = function() {
-  if ( this.style.animationPlayState != 'running' ) {
-    this.style.animationPlayState = 'running';
-  } else {
-    this.style.animationPlayState = 'paused';
-  }
-}
-*/
+$(function() {
+  $(".slider").slick({
+    arrows: false,
+    fade: true,
+    autoplay: 3000,
+    dots: true
+  });
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
+  // .addClass - додає функцію, відкриває меню
+  $(".header-btn").on("click", function() {
+    $(".menu").addClass("active");
+  });
+  //  .removeClass - дана функція закриває меню
+  $(".close-btn").on("click", function() {
+    $(".menu").removeClass("active");
+  });
+});
 
 /* анімація центрального напису ===========================*/
 var elem = document.getElementById("svgContainer");

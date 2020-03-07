@@ -1,33 +1,162 @@
-*, *:befor. *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*:befor. *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
     display: flex;
     flex-direction: column;
-    background: #000;
-    font-family: droid_serifregular;
-    font-weight: normal;
-    font-style: normal;
-    color: #fff;
-} 
-main {
-    flex-grow: 1;    
-}
-main, header, footer {
+    background-image: url(../img/firs_layer.png);
+    color: #ffffff;
+    font-family: roboto_condensedregular;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    /* font-family: roboto; */
+  }
+  main {
+    flex-grow: 1;
+  }
+  main,
+  header,
+  footer {
     width: 100%;
-}
-
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 /* розділення шаблона від тіла программи ======== */
 /* ============================================= */
-.header {
-    height: 100vh;
-    background-color: #e62117;
+/* HEADER====================== */
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
 }
+.header-top {
+display: flex;
+justify-content: space-between;
+max-height: 100vh;
+}
+.header-btn {
+    padding: 20px 0 0 20px;
+    font-size: 3em;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header-btn:hover {
+    color: #E60023;
+}
+.logo {
+    padding: 20px 20px 0 0;
+}
+/* menu */
+.menu {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  /* .manu.active - технічний елемент для JS: при натисканні на піктограму меню, виовдить його в видиму зону */
+  .menu.active {
+    left: 100%;
+  }
+  .conteiner-menu {
+    position: relative;
+  }
+  .close-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 31px;
+    cursor: pointer;
+  }
+  .close-btn::after,
+  .close-btn::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: #ffffff;
+    transform-origin: left;
+  }
+  .close-btn::after {
+    transform: rotate(45deg);
+  }
+  .close-btn::before {
+    transform: rotate(-45deg);
+    bottom: -1px;
+  }
+  .menu__list {
+    height: 100vh;
+    display: flex;
+    text-align: left;
+  }
+  .menu__list ul {
+    list-style: none;
+    margin-top: 5em;
+  }
+  .menu__list a {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    padding: 30px 25px 14px 0;
+    border-bottom: 3px solid #770302;
+    max-width: 368px;
+    width: 100%;
+  }
+  .menu__list a:hover {
+    border-color: #ffffff;
+    color: #770302;
+    transition: 0.6s linear;
+    transform: scale(1.1);
+    margin-left: 37px;
+  }
+/* центральний напис svg */
+#svgContainer {
+    width: 50em;
+}
+/* slick slider =============================== */
+.slider__item {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slider .slick-dots button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0b0b0b;
+    border: none;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+    outline: 0;
+  }
+  .slider .slick-dots .slick-active button {
+    background-color: #ffffff;
+  }
+  .slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .slider .slick-dots {
+    margin: -55px auto 0;
+    position: relative;
+    z-index: 3;
+    max-width: 1230px;
+    padding: 0 15px;
+  }
+/* MAIN======================= */
 .main {
     height: 100vh;
-    background-color: aqua;
 }
 
 
@@ -39,7 +168,6 @@ main, header, footer {
 .footer {
     height: 300px;
     width: 100%;
-    background-color: #E60023;
 }
 
     /*========== social ===========*/
