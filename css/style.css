@@ -334,8 +334,15 @@ background: rgba(103,97,58, .2);
 /* footer***************************************** */
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     height: 300px;
     width: 100%;
+}
+.basment-contacts {
+    display: block;
+    padding-top: 150px;
+    font-style: italic;
 }
 
     /*========== social ===========*/
@@ -345,7 +352,7 @@ background: rgba(103,97,58, .2);
         justify-content: flex-end;
         width: 100%;
         text-align: right;
-        margin: 190px 125px 0 0;
+        margin: -50px 125px 0 0;
         max-height: 80px;
         font-size: 2em;
     }
