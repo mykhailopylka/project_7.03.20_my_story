@@ -104,17 +104,18 @@ body {
   }
   .menu__list ul {
     list-style: none;
-    margin-top: 5em;
+    margin-top: 3em;
   }
   .menu__list a {
     display: inline-block;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 56px;
     font-weight: bold;
     padding: 30px 25px 14px 0;
     border-bottom: 3px solid #770302;
     max-width: 368px;
     width: 100%;
+    transition: all .2s;
   }
   .menu__list a:hover {
     border-color: #ffffff;
@@ -336,7 +337,6 @@ background: rgba(103,97,58, .2);
 .footer {
     display: flex;
     justify-content: space-between;
-    height: 300px;
     width: 100%;
 }
 .basment-contacts {
@@ -344,108 +344,158 @@ background: rgba(103,97,58, .2);
     padding-top: 150px;
     font-style: italic;
 }
-
-    /*========== social ===========*/
-    @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-    .basement-social {
-        display: flex;    
-        justify-content: flex-end;
-        width: 100%;
-        text-align: right;
-        margin: -50px 125px 0 0;
-        max-height: 80px;
-        font-size: 2em;
+/* form ===================== */
+.basement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.basement img{
+  width: 100%;   
+}
+.basement-text {
+  margin-top: -35%;
+  width: 40%;
+}
+.basement-text p {
+  width: 55%;
+  margin: 0 auto;
+}
+.basement-boxform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  line-height: 2;
+  margin-left: -20px;
+}
+.basement-boxform input {
+  width: 100%;
+  height: 2em;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+.basement-boxform button {
+  line-height: 3;
+  margin: 20px auto;
+  width: 50%;
+  background-color: #33556C;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: all .2s;
+}
+.basement-boxform button:hover{
+  box-shadow: 3px 3px 5px #fff;
+  cursor: pointer;
+}
+/*========== social ===========*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.basement-social {
+    display: flex;    
+    justify-content: flex-end;
+    width: 100%;
+    text-align: right;
+    margin: -10px 125px 0 0;
+    max-height: 80px;
+    font-size: 2em;
+}
+ul.submenu {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 5px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #ccc;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 200%;
+  width: 200%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-twitter::after {
+  height: 200%;
+  width: 200%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-pinterest::after {
+  height: 200%;
+  width: 200%;
+  background-color: #E60023;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 200%;
+  width: 200%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-youtube::after {
+  height: 200%;
+  width: 200%;
+  background-color: #e62117;
+  border-radius: 0px;
+  opacity: 1;
+}
+/*************************************************************/
+/* END FOOTER                                                    */
+/*************************************************************/
+@media screen and (max-width: 1320px) {
+.conteiner-all_section-chenger img, .conteiner-all_section-chenger {
+  flex-wrap: wrap; 
+forth_section-pillar img {
+  width: 20px;
+  height: 150px;
     }
-    ul.submenu {
-      border-radius: 5px;
-      display: inline-block;
-      padding: 4px 10px;
-      margin: 0;
-      overflow: hidden;
-    }
-    ul.submenu li {
-      display: inline-block;
-    }
-    ul.submenu li a i.fa {
-      padding: 10px;
-      display: inline-block;
-      border: 1px solid transparent;
-      color: #ccc;
-      height: 30px;
-      width: 30px;
-      border-radius: 50px;
-      margin: 10px;
-      text-align: center;
-      line-height: 30px;
-      position: relative;
-      z-index: 2;
-    }
-    ul.submenu li a i.fa::after {
-      content: "";
-      height: 0%;
-      width: 0%;
-      position: absolute;
-      top: -500%;
-      bottom: -500%;
-      left: -500%;
-      right: -500%;
-      margin: auto;
-      border: 0px solid transparent;
-      border-radius: 200px;
-      opacity: 0;
-      z-index: -1;
-      transition: all ease 0.5s;
-    }
-    ul.submenu li a:hover i.fa::before {
-      color: #fff;
-    }
-    ul.submenu li a:hover i.fa-facebook::after {
-      height: 200%;
-      width: 200%;
-      background-color: #3b5998;
-      border-radius: 0px;
-      opacity: 1;
-    }
-    ul.submenu li a:hover i.fa-twitter::after {
-      height: 200%;
-      width: 200%;
-      background-color: #1dcaff;
-      border-radius: 0px;
-      opacity: 1;
-    }
-    ul.submenu li a:hover i.fa-pinterest::after {
-      height: 200%;
-      width: 200%;
-      background-color: #E60023;
-      border-radius: 0px;
-      opacity: 1;
-    }
-    ul.submenu li a:hover i.fa-instagram::after {
-      height: 200%;
-      width: 200%;
-      background-color: #8a3ab9;
-      border-radius: 0px;
-      opacity: 1;
-    }
-    ul.submenu li a:hover i.fa-youtube::after {
-      height: 200%;
-      width: 200%;
-      background-color: #e62117;
-      border-radius: 0px;
-      opacity: 1;
-    }
-    /*************************************************************/
-    /* END FOOTER                                                    */
-    /*************************************************************/
-    @media screen and (max-width: 1320px) {
-        .conteiner-all_section-chenger {
-           flex-wrap: wrap; 
-        }
-        .conteiner-all_section-chenger img, .forth_section-pillar img {
-            width: 20px;
-            height: 150px;
-        }
-    }
+  }
+}
 /*************************************************************/
 /* END FOOTER                                                    */
 /*************************************************************/

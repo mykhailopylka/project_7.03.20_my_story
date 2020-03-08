@@ -52,11 +52,24 @@
             <div class="close-btn"></div>
             <div class="menu__list">
               <ul>
-                <li><a href="#">Стаття 1</a></li>
-                <li><a href="#">Стаття 2</a></li>
-                <li><a href="#">Стаття 3</a></li>
-                <li><a href="#">Стаття 4</a></li>
-                <li><a href="#">Контаки</a></li>
+                <li>
+                  <a href="#main-article__1">Мої пригоди</a>
+                </li>
+                <li>
+                  <a href="#main-article__2">Мої історії</a>
+                </li>
+                <li>
+                  <a href="#main-article__3">Мої відчуття</a>
+                </li>
+                <li>
+                  <a href="#main-article__4">Мої подорожі</a>
+                </li>
+                <li>
+                  <a href="#main-article__5">Мої враження</a>
+                </li>
+                <li>
+                  <a href="#footer-contact">Контаки</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -89,11 +102,11 @@
     <main class="main">
       <div class="conteiner">
         <conteiner class="main-article">
-          <div id="about" class="main-article__discribe">
+          <div id="main-article__1" class="main-article__discribe">
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
-                  About
+                  Мої пригоди
                 </h2>
                 <p>
                   Out here, you’re bound to find a story around each and every
@@ -124,7 +137,7 @@
           </div>
                     <!----conteiner-second_section transition---------------->
                     <div
-                    id="article_2"
+                    id="main-article__2"
                     class="main-article__discribe  second_section transition"
                     onmouseover="changeItem2()"
                     onmouseout="rechangeItem2()"
@@ -132,7 +145,7 @@
                     <div class="conteiner-all">
                       <div class="text_all_section-chenger">
                         <h2>
-                          Article_2
+                          Мої історії
                         </h2>
                         <p>
                           Out here, you’re bound to find a story around each and every
@@ -160,7 +173,7 @@
                   </div>
                   <!----therd_section---------------->
           <div
-          id="article_3"
+          id="main-article__3"
           class="main-article__discribe therd_section transition"
           onmouseover="changeItem3()"
           onmouseout="rechangeItem3()"
@@ -168,7 +181,7 @@
           <div class="conteiner-all">
             <div class="text_all_section-chenger">
               <h2>
-                Article_3
+                Мої відчуття
               </h2>
               <p>
                 Out here, you’re bound to find a story around each and every
@@ -199,7 +212,7 @@
         </div>
          <!----forth_section---------------->
          <div
-         id="article_4"
+         id="main-article__4"
          class="main-article__discribe forth_section transition"
          onmouseover="changeItem4()"
          onmouseout="rechangeItem4()"
@@ -256,7 +269,7 @@
          </div>
          <div class="text_all_section-chenger-forth">
            <h2>
-             Article_4
+             Мої подорожі
            </h2>
            <p>
              Out here, you’re bound to find a story around each and every
@@ -268,13 +281,13 @@
        </div>
             <!----fifth_section---------------->
             <div
-            id="article_5"
+            id="main-article__5"
             class="main-article__discribe fifth_section transition"
           >
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
-                  Article_5
+                  Мої враження
                 </h2>
                 <p>
                   Out here, you’re bound to find a story around each and every
@@ -310,11 +323,30 @@
       <!-- /conteiner -->
       </div>
     </main>
+    <!-- FOOTER*************************************** -->
     <footer role="downside" class="footer">
-      <div class="conteiner">
-        <div class="basment-contacts">
-          <a href="#">Mykhailo Pylka 2020</a>
+      <div class="basement">
+        <img src="img/footer.png" alt="photo" />
+        <!---------------------------------------->
+        <div class="basement-text">
+          <h2>
+            Хочете продовження історії?
+          </h2>
+          <p>
+            Напишіть мені ваші ідеї та бачення:
+          </p>
         </div>
+        <form id="footer-contact" class="basement-boxform">
+          <label>
+            Email:
+          </label>
+          <br />
+          <input type="text" placeholder="Enter your Email" />
+          <br />
+          <button type="submit" value="send">
+            Відправити мені
+          </button>
+        </form>
         <!-- social -->
         <div class="basement-social">
           <ul class="submenu">
@@ -334,9 +366,7 @@
               <a href="#"><i class="fa fa-pinterest"></i></a>
             </li>
           </ul>
-        <!-- /social -->
         </div>
-      <!-- /conteiner -->
       </div>
     </footer>
   </body>
