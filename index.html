@@ -281,9 +281,11 @@
        </div>
             <!----fifth_section---------------->
             <div
-            id="main-article__5"
-            class="main-article__discribe fifth_section transition"
-          >
+          id="main-article__5"
+          class="main-article__discribe therd_section transition"
+          onmouseover="changeItem3()"
+          onmouseout="rechangeItem3()"
+        >
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
@@ -299,6 +301,12 @@
               </div>
               <div class="conteiner-all_section-chenger">
                 <a href="#">
+                  <img src="img/a-tangled-tale.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/msit-nokmaq.jpg" alt="photo" />
+                </a>
+                <a href="#">
                   <img
                     src="img/the-secret-language-of-clotheslines.jpg"
                     alt="photo"
@@ -307,66 +315,65 @@
                 <a href="#">
                   <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
                 </a>
-                <a href="#">
-                  <img src="img/the-stuff-of-stories.jpg" alt="photo" />
-                </a>
-                <a href="#">
-                  <img src="img/the-viking-ghost.jpg" alt="photo" />
-                </a>
-                <a href="#">
-                  <img src="img/bacon-cove.jpg" alt="photo" />
-                </a>
               </div>
             </div>
           </div>
-        </conteiner>
-      <!-- /conteiner -->
+<!-- /conteiner -->
+        </conteiner>      
       </div>
     </main>
     <!-- FOOTER*************************************** -->
+    
     <footer role="downside" class="footer">
-      <div class="basement">
-        <img src="img/footer.png" alt="photo" />
-        <!---------------------------------------->
-        <div class="basement-text">
-          <h2>
-            Хочете продовження історії?
-          </h2>
-          <p>
-            Напишіть мені ваші ідеї та бачення:
-          </p>
+      <div class="conteiner">
+        <div class="footer-basement">
+          <!---------------------------------------->
+          <div class="footer-basement__text">
+            <h2>
+              Хочете продовження історії?
+            </h2>
+            <p>
+              Напишіть мені ваші ідеї та бачення:
+            </p>
+          </div>
+          <form id="footer-contact" class="footer-basement__boxform">
+            <label>
+              Email:
+            </label>
+            <br />
+            <input type="text" placeholder="Enter your Email" />
+            <br />
+            <button type="submit" value="send">
+              Відправити мені
+            </button>
+          </form>
+          <!-- social -->
+          <div class="footer-basement__social">
+            <ul class="submenu">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+<!-- /basment -->
         </div>
-        <form id="footer-contact" class="basement-boxform">
-          <label>
-            Email:
-          </label>
-          <br />
-          <input type="text" placeholder="Enter your Email" />
-          <br />
-          <button type="submit" value="send">
-            Відправити мені
-          </button>
-        </form>
-        <!-- social -->
-        <div class="basement-social">
-          <ul class="submenu">
-            <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-youtube"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-pinterest"></i></a>
-            </li>
-          </ul>
-        </div>
+<!-- /conteiner -->
+      </div>
+      <!-- background img  -->
+      <div class="footer-background">
+        <img src="img/footer.png" alt="photo footer" />
       </div>
     </footer>
   </body>
