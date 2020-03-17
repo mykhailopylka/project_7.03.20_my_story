@@ -23,38 +23,52 @@ function changeItem() {
 //     "url(../img/firs_layer.png)";
 // }
 
-function changeItem1() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__1.png)";
-}
-function rechangeItem1() {
-  document.getElementById("my_changebody").style.background =
-    "url(../img/firs_layer.png)";
-  setInterval(rechangeItem2, 500);
-}
+// function changeItem1() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__1.png)";
+// }
 
-function changeItem2() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__2.png)";
-}
+// var x = document.getElementById("main-article__1");
+// x.addEventListener("mouseover", myFunction);
+// x.addEventListener("mouseout", myThirdFunction);
+
+// function myFunction() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__1.png)";
+// }
+
+// function myThirdFunction() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer.png)";
+// }
+// function rechangeItem1() {
+//   document.getElementById("my_changebody").style.background =
+//     "url(../img/firs_layer.png)";
+//   setInterval(rechangeItem2, 500);
+// }
+
+// function changeItem2() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__2.png)";
+// }
 // function rechangeItem2() {
 //   document.getElementById("changebody").style.background =
 //     "url(../img/firs_layer__2.png)";
 // }
 
-function changeItem3() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__3.png)";
-}
-function changeItem4() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__4.png)";
-}
-function changeItem5() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__5.png)";
-}
-function changeItem6() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer__6.png))";
-}
+// function changeItem3() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__3.png)";
+// }
+// function changeItem4() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__4.png)";
+// }
+// function changeItem5() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__5.png)";
+// }
+// function changeItem6() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__6.png))";
+// }

@@ -30,6 +30,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <!-- /JS -->
     <header class="header" onmouseover="changeItem()">
       <div class="conteiner">
@@ -103,8 +104,7 @@
       <div class="conteiner">
 <!--main-article__1  -->
         <conteiner class="main-article">
-          <div id="main-article__1" class="main-article__discribe"
-          onmouseover="changeItem1()">
+          <div id="main-article__1" class="main-article__discribe">
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
@@ -137,6 +137,24 @@
               </div>
             </div>
           </div>
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+          var x = document.getElementById("main-article__1");
+          x.addEventListener("mouseover", myFunction);
+          x.addEventListener("mouseout", myThirdFunction);
+
+          function myFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer__1.png)";
+          }
+
+          function myThirdFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer.png)";
+          }
+          </script>
+
+
  <!----main-article__2---------------->
           <div
             id="main-article__2"
@@ -171,6 +189,22 @@
               </div>
             </div>
           </div>
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+            var x = document.getElementById("main-article__2");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+  
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer__2.png)";
+            }
+  
+            function myThirdFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer.png)";
+            }
+            </script>
  <!----therd_section---------------->
           <div
           id="main-article__3"
@@ -208,6 +242,22 @@
             </div>
           </div>
         </div>
+        <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+        <script>
+          var x = document.getElementById("main-article__3");
+          x.addEventListener("mouseover", myFunction);
+          x.addEventListener("mouseout", myThirdFunction);
+
+          function myFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer__3.png)";
+          }
+
+          function myThirdFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer.png)";
+          }
+          </script>
 <!----forth_section---------------->
          <div
          id="main-article__4"
@@ -275,6 +325,22 @@
            </p>
          </div>
        </div>
+        <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+        <script>
+          var x = document.getElementById("main-article__4");
+          x.addEventListener("mouseover", myFunction);
+          x.addEventListener("mouseout", myThirdFunction);
+
+          function myFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer__4.png)";
+          }
+
+          function myThirdFunction() {
+            document.getElementById("changebody").style.background =
+              "url(img/firs_layer.png)";
+          }
+          </script>
             <!----fifth_section---------------->
             <div
           id="main-article__5"
@@ -312,13 +378,29 @@
               </div>
             </div>
           </div>
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+            var x = document.getElementById("main-article__5");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer__5.png)";
+            }
+
+            function myThirdFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer.png)";
+            }
+            </script>
 <!-- /conteiner -->
         </conteiner>      
       </div>
     </main>
     <!-- FOOTER*************************************** -->
     
-    <footer role="downside" class="footer" onmouseover="changeItem()">
+    <footer role="downside" class="footer" id="main-article__6">
       <div class="conteiner">
         <div class="footer-basement">
           <!---------------------------------------->
@@ -361,6 +443,22 @@
               </li>
             </ul>
           </div>
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+            var x = document.getElementById("main-article__6");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+  
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer.png)";
+            }
+  
+            function myThirdFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer.png)";
+            }
+            </script>
 <!-- /basment -->
         </div>
 <!-- /conteiner -->
