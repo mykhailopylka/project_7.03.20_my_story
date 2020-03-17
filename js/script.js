@@ -9,28 +9,52 @@ var animData = {
 };
 anim = lottie.loadAnimation(animData);
 
-/* зміна фонового кольору при наведенні ===========================*/
+/* зміна фонового кольору при наведенні 
+my_changebody - id в body ідентифікатор який саме виконує дію скрипта по зміні фону
+changeItem1 - ідентифікатор функції, яка передається через index.html
+===========================*/
+
+function changeItem() {
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer.png)";
+}
+// function rechangeItem() {
+//   document.getElementById("my_changebody").style.background =
+//     "url(../img/firs_layer.png)";
+// }
+
+function changeItem1() {
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__1.png)";
+}
+function rechangeItem1() {
+  document.getElementById("my_changebody").style.background =
+    "url(../img/firs_layer.png)";
+  setInterval(rechangeItem2, 500);
+}
+
 function changeItem2() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(8,45,47,.95)";
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__2.png)";
 }
-function rechangeItem2() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(0,15,14,.95)";
-}
+// function rechangeItem2() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer__2.png)";
+// }
+
 function changeItem3() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(77,85,71, .95)";
-}
-function rechangeItem3() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(0,15,14,.95)";
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__3.png)";
 }
 function changeItem4() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(103,97,58, .95)";
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__4.png)";
 }
-function rechangeItem4() {
-  document.getElementById("mychangebody").style.background =
-    "rgba(0,15,14,.95)";
+function changeItem5() {
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__5.png)";
+}
+function changeItem6() {
+  document.getElementById("changebody").style.background =
+    "url(../img/firs_layer__6.png))";
 }

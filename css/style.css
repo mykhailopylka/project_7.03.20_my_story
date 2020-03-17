@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   width: 100%;
   /* font-family: roboto; */
+  z-index: 1;
 }
 main {
   flex-grow: 1;
@@ -169,6 +170,7 @@ a {
 .main {
   margin-top: 100px;
   flex-wrap: wrap;
+  width: 100%;
 }
 /* main-article */
 .main-article__discribe {
@@ -200,24 +202,24 @@ a {
   height: auto;
   margin-right: 2em;
   border-radius: 10px;
-  transition: transform 0.25s ease-in-out 0s;
+  transition: transform 0.25s ease-in-out 0.25s;
 }
 .conteiner-all_section-chenger img:hover {
   transform: scale(1.1);
 }
 .transition {
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 /* second_section **************************************************/
 .second_section {
   width: 100%;
   margin-top: 0;
 }
-.second_section:hover {
+/* .second_section:hover {
   background: rgba(8, 45, 47, 0.2);
-}
+} */
 /* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
-.second_section:hover ~ * {
+/* .second_section:hover ~ * {
   background: rgba(8, 45, 47, 0.2);
 }
 .second_section:hover:after {
@@ -231,18 +233,18 @@ a {
   background-color: rgba(8, 45, 47, 0.2);
   pointer-events: none;
   z-index: -1;
-}
+} */
 /* therd_section **************************************************/
 .therd_section {
   width: 100%;
   margin-top: 0;
   flex-wrap: wrap;
 }
-.therd_section:hover {
+/* .therd_section:hover {
   background: rgba(77, 85, 71, 0.2);
-}
+} */
 /* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
-.therd_section:hover ~ * {
+/* .therd_section:hover ~ * {
   background: rgba(77, 85, 71, 0.2);
 }
 .therd_section:hover:after {
@@ -256,7 +258,7 @@ a {
   background-color: rgba(77, 85, 71, 0.2);
   pointer-events: none;
   z-index: -1;
-}
+} */
 /* forth_section **************************************************/
 .forth_section {
   display: flex;
@@ -267,11 +269,11 @@ a {
   margin-top: 0;
   flex-wrap: wrap;
 }
-.forth_section:hover {
+/* .forth_section:hover {
   background: rgba(103, 97, 58, 0.2);
-}
+} */
 /* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
-.forth_section:hover ~ * {
+/* .forth_section:hover ~ * {
   background: rgba(103, 97, 58, 0.2);
 }
 .forth_section:hover:after {
@@ -285,7 +287,7 @@ a {
   background-color: rgba(103, 97, 58, 0.2);
   pointer-events: none;
   z-index: -1;
-}
+} */
 /*  **************************************************/
 .forth_section-pillar {
   display: flex;
