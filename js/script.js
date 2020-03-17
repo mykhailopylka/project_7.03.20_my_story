@@ -14,10 +14,10 @@ my_changebody - id в body ідентифікатор який саме вико
 changeItem1 - ідентифікатор функції, яка передається через index.html
 ===========================*/
 
-function changeItem() {
-  document.getElementById("changebody").style.background =
-    "url(../img/firs_layer.png)";
-}
+// function changeItem() {
+//   document.getElementById("changebody").style.background =
+//     "url(../img/firs_layer.png)";
+// }
 // function rechangeItem() {
 //   document.getElementById("my_changebody").style.background =
 //     "url(../img/firs_layer.png)";

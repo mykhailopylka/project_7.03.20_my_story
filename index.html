@@ -24,7 +24,7 @@
       <script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body id="changebody">
+  <body>
     <!-- <script src="js/script.js"></script> -->
     <!-- JS slick slider -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -32,7 +32,7 @@
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
     <!-- /JS -->
-    <header class="header" onmouseover="changeItem()">
+    <header class="header">
       <div class="conteiner">
         <!-- header-top  -->
         <div class="header-top">
@@ -74,12 +74,11 @@
               </ul>
             </div>
           </div>
-        </nav>        
+        </nav>
         <!-- Центральна svg -->
         <div id="svgContainer"></div>
-          <script src="js/lottie.js"></script>
-          <script src="js/script.js"></script>
-      </div>
+        <script src="js/lottie.js"></script>
+        <script src="js/script.js"></script>
         <!-- /conteiner -->
       </div>
     </header>
@@ -101,8 +100,8 @@
       </div>
     </section>
     <main class="main">
-      <div class="conteiner">
-<!--main-article__1  -->
+      <div class="conteiner" id="changebody">
+        <!--main-article__1  -->
         <conteiner class="main-article">
           <div id="main-article__1" class="main-article__discribe">
             <div class="conteiner-all">
@@ -139,27 +138,27 @@
           </div>
           <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
           <script>
-          var x = document.getElementById("main-article__1");
-          x.addEventListener("mouseover", myFunction);
-          x.addEventListener("mouseout", myThirdFunction);
+            var x = document.getElementById("main-article__1");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
 
-          function myFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer__1.png)";
-          }
-
-          function myThirdFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer.png)";
-          }
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer__1.png)";
+            }
+            function myThirdFunction() {
+              document.getElementById("changebody").style.background =
+                //"url(img/firs_layer.png)";
+                "rgba(0,0,0,0)";
+            }
           </script>
 
-
- <!----main-article__2---------------->
+          <!----main-article__2---------------->
           <div
             id="main-article__2"
             class="main-article__discribe  second_section transition"
-            onmouseover="changeItem2()">
+            onmouseover="changeItem2()"
+          >
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
@@ -194,158 +193,146 @@
             var x = document.getElementById("main-article__2");
             x.addEventListener("mouseover", myFunction);
             x.addEventListener("mouseout", myThirdFunction);
-  
+
             function myFunction() {
               document.getElementById("changebody").style.background =
                 "url(img/firs_layer__2.png)";
             }
-  
-            function myThirdFunction() {
-              document.getElementById("changebody").style.background =
-                "url(img/firs_layer.png)";
-            }
-            </script>
- <!----therd_section---------------->
+          </script>
+          <!----therd_section---------------->
           <div
-          id="main-article__3"
-          class="main-article__discribe therd_section transition"
-          onmouseover="changeItem3()">
-          <div class="conteiner-all">
-            <div class="text_all_section-chenger">
+            id="main-article__3"
+            class="main-article__discribe therd_section transition"
+            onmouseover="changeItem3()"
+          >
+            <div class="conteiner-all">
+              <div class="text_all_section-chenger">
+                <h2>
+                  Мої відчуття
+                </h2>
+                <p>
+                  Out here, you’re bound to find a story around each and every
+                  corner – not to mention a teller or two. You’ll uncover them
+                  as you move through all of the bays, bights, and tickles of
+                  this place. Here are a few Hand-Picked Tales to send you on
+                  your way.
+                </p>
+              </div>
+              <div class="conteiner-all_section-chenger">
+                <a href="#">
+                  <img src="img/a-tangled-tale.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img src="img/msit-nokmaq.jpg" alt="photo" />
+                </a>
+                <a href="#">
+                  <img
+                    src="img/the-secret-language-of-clotheslines.jpg"
+                    alt="photo"
+                  />
+                </a>
+                <a href="#">
+                  <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+            var x = document.getElementById("main-article__3");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer__3.png)";
+            }
+          </script>
+          <!----forth_section---------------->
+          <div
+            id="main-article__4"
+            class="main-article__discribe forth_section transition"
+            onmouseover="changeItem4()"
+          >
+            <!------------------>
+            <div class="forth_section-pillar">
+              <ul>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_09.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_08.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_07.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_06.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_05.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_04.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_03.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_02.jpg" class="scale" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="scale">
+                    <img src="img/img_01/img_01.jpg" class="scale" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text_all_section-chenger-forth">
               <h2>
-                Мої відчуття
+                Мої подорожі
               </h2>
               <p>
                 Out here, you’re bound to find a story around each and every
-                corner – not to mention a teller or two. You’ll uncover them
-                as you move through all of the bays, bights, and tickles of
-                this place. Here are a few Hand-Picked Tales to send you on
-                your way.
+                corner – not to mention a teller or two. You’ll uncover them as
+                you move through all of the bays, bights, and tickles of this
+                place. Here are a few Hand-Picked Tales to send you on your way.
               </p>
             </div>
-            <div class="conteiner-all_section-chenger">
-              <a href="#">
-                <img src="img/a-tangled-tale.jpg" alt="photo" />
-              </a>
-              <a href="#">
-                <img src="img/msit-nokmaq.jpg" alt="photo" />
-              </a>
-              <a href="#">
-                <img
-                  src="img/the-secret-language-of-clotheslines.jpg"
-                  alt="photo"
-                />
-              </a>
-              <a href="#">
-                <img src="img/the-shortest-story-ever-told.jpg" alt="photo" />
-              </a>
-            </div>
           </div>
-        </div>
-        <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
-        <script>
-          var x = document.getElementById("main-article__3");
-          x.addEventListener("mouseover", myFunction);
-          x.addEventListener("mouseout", myThirdFunction);
+          <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
+          <script>
+            var x = document.getElementById("main-article__4");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("mouseout", myThirdFunction);
 
-          function myFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer__3.png)";
-          }
-
-          function myThirdFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer.png)";
-          }
+            function myFunction() {
+              document.getElementById("changebody").style.background =
+                "url(img/firs_layer__4.png)";
+            }
           </script>
-<!----forth_section---------------->
-         <div
-         id="main-article__4"
-         class="main-article__discribe forth_section transition"
-         onmouseover="changeItem4()">
-         <!------------------>
-         <div class="forth_section-pillar">
-           <ul>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_09.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_08.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_07.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_06.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_05.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_04.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_03.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_02.jpg" class="scale" />
-               </a>
-             </li>
-             <li>
-               <a href="#" class="scale">
-                 <img src="img/img_01/img_01.jpg" class="scale" />
-               </a>
-             </li>
-           </ul>
-         </div>
-         <div class="text_all_section-chenger-forth">
-           <h2>
-             Мої подорожі
-           </h2>
-           <p>
-             Out here, you’re bound to find a story around each and every
-             corner – not to mention a teller or two. You’ll uncover them as
-             you move through all of the bays, bights, and tickles of this
-             place. Here are a few Hand-Picked Tales to send you on your way.
-           </p>
-         </div>
-       </div>
-        <!-- скрипт зміни кольору при наведенні (чомусь не спрацьовує, якщо перемістити в папку js) -->
-        <script>
-          var x = document.getElementById("main-article__4");
-          x.addEventListener("mouseover", myFunction);
-          x.addEventListener("mouseout", myThirdFunction);
-
-          function myFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer__4.png)";
-          }
-
-          function myThirdFunction() {
-            document.getElementById("changebody").style.background =
-              "url(img/firs_layer.png)";
-          }
-          </script>
-            <!----fifth_section---------------->
-            <div
-          id="main-article__5"
-          class="main-article__discribe therd_section transition"
-          onmouseover="changeItem5()">
+          <!----fifth_section---------------->
+          <div
+            id="main-article__5"
+            class="main-article__discribe therd_section transition"
+            onmouseover="changeItem5()"
+          >
             <div class="conteiner-all">
               <div class="text_all_section-chenger">
                 <h2>
@@ -388,18 +375,13 @@
               document.getElementById("changebody").style.background =
                 "url(img/firs_layer__5.png)";
             }
-
-            function myThirdFunction() {
-              document.getElementById("changebody").style.background =
-                "url(img/firs_layer.png)";
-            }
-            </script>
-<!-- /conteiner -->
-        </conteiner>      
+          </script>
+          <!-- /conteiner -->
+        </conteiner>
       </div>
     </main>
     <!-- FOOTER*************************************** -->
-    
+
     <footer role="downside" class="footer" id="main-article__6">
       <div class="conteiner">
         <div class="footer-basement">
@@ -448,20 +430,15 @@
             var x = document.getElementById("main-article__6");
             x.addEventListener("mouseover", myFunction);
             x.addEventListener("mouseout", myThirdFunction);
-  
+
             function myFunction() {
               document.getElementById("changebody").style.background =
-                "url(img/firs_layer.png)";
+                "rgba(0,0,0,0)";
             }
-  
-            function myThirdFunction() {
-              document.getElementById("changebody").style.background =
-                "url(img/firs_layer.png)";
-            }
-            </script>
-<!-- /basment -->
+          </script>
+          <!-- /basment -->
         </div>
-<!-- /conteiner -->
+        <!-- /conteiner -->
       </div>
       <!-- background img  -->
       <div class="footer-background">
