@@ -8,7 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background: url(../img/firs_layer.png);
+  background: url(../img/body_layer.png);
   color: #ffffff;
   font-family: roboto_condensedregular;
   font-size: 24px;
@@ -350,7 +350,7 @@ li {
 }
 /* footer***************************************** */
 .footer {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 100%;
   flex-wrap: wrap;
 }
