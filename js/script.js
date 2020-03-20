@@ -13,19 +13,19 @@ anim = lottie.loadAnimation(animData);
 my_changebody - id в body ідентифікатор який саме виконує дію скрипта по зміні фону
 changeItem1 - ідентифікатор функції, яка передається через index.html
 ===========================*/
-var x = document.getElementById("main-article__1");
-x.addEventListener("mouseover", myFunction);
-x.addEventListener("mouseout", myThirdFunction);
+// var x = document.getElementById("main-article__1");
+// x.addEventListener("mouseover", myFunction);
+// x.addEventListener("mouseout", myThirdFunction);
 
-function myFunction() {
-  document.getElementById("changebody").style.background =
-    "rgba(4, 20, 20, 0.5)";
-  document.getElementById("changebody").style.boxShadow = "10px 10px 30px #fff";
-}
-function myThirdFunction() {
-  document.getElementById("changebody").style.background = "rgba(0,0,0,0)";
-  document.getElementById("changebody").style.boxShadow = "none";
-}
+// function myFunction() {
+//   document.getElementById("changebody").style.background =
+//     "rgba(4, 20, 20, 0.5)";
+//   document.getElementById("changebody").style.boxShadow = "10px 10px 30px #fff";
+// }
+// function myThirdFunction() {
+//   document.getElementById("changebody").style.background = "rgba(0,0,0,0)";
+//   document.getElementById("changebody").style.boxShadow = "none";
+// }
 
 // function changeItem() {
 //   document.getElementById("changebody").style.background =

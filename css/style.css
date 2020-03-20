@@ -15,6 +15,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   width: 100%;
+  overflow-x: hidden;
   /* font-family: roboto; */
 }
 main {
@@ -41,7 +42,7 @@ a {
 }
 .conteiner {
   /* display: flex; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   border-radius: 10px;
   /* border: 3px solid #e60023; */
@@ -89,7 +90,7 @@ a {
   cursor: pointer;
   border: 3px solid #fff;
   transition: all 0.5s;
-  padding: 5px 5px;
+  padding: 2px 5px;
 }
 .close-btn:hover {
   border: 3px solid #770302;
@@ -110,9 +111,8 @@ a {
 /* регулювання ліній хрестика одна відносно іншої */
 .close-btn::before {
   transform: rotate(-45deg);
-  bottom: 1.5px;
+  bottom: 2.8px;
 }
-/* /хрестик */
 .menu__list {
   height: 100vh;
   display: flex;
@@ -179,7 +179,6 @@ a {
 /* MAIN======================= */
 .main {
   margin-top: 100px;
-  flex-wrap: wrap;
   width: 100%;
 }
 /* main-article */
@@ -204,6 +203,7 @@ a {
 }
 .conteiner-all_section-chenger {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -219,6 +219,10 @@ a {
 }
 .transition {
   transition: all 0.2s;
+}
+/* first section ************************** */
+.first_section {
+  width: 100%;
 }
 /* second_section **************************************************/
 .second_section {
@@ -279,31 +283,12 @@ a {
   margin-top: 0;
   flex-wrap: wrap;
 }
-/* .forth_section:hover {
-  background: rgba(103, 97, 58, 0.2);
-} */
-/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
-/* .forth_section:hover ~ * {
-  background: rgba(103, 97, 58, 0.2);
-}
-.forth_section:hover:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(103, 97, 58, 0.2);
-  pointer-events: none;
-  z-index: -1;
-} */
 /*  **************************************************/
 .forth_section-pillar {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex: 1.8;
+  flex: 30%;
   margin-left: 50px;
 }
 .forth_section-pillar ul {
@@ -320,7 +305,7 @@ li {
   list-style-type: none;
 }
 .forth_section-pillar .scale img {
-  width: 165px;
+  width: 190px;
   height: 250px;
   transition: 0.3s ease-in-out 0s;
 }
@@ -333,8 +318,8 @@ li {
 }
 .text_all_section-chenger-forth h2,
 .text_all_section-chenger-forth p {
-  width: 60%;
-  padding-left: 200px;
+  width: 90%;
+  padding-left: 150px;
 }
 /* ефект лінування **************************************************/
 .scale {
@@ -358,20 +343,25 @@ li {
 }
 /* footer***************************************** */
 .footer {
-  margin-top: 150px;
+  margin-top: 100px;
   width: 100%;
-  flex-wrap: wrap;
+  /* height: 100vh; */
 }
 /* footer background */
 .footer-background {
-  display: flex;
-  margin-top: -100vh;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .footer-background img {
+  position: relative;
+  bottom: -10px;
   max-height: 100vh;
   max-width: 1920px;
   width: 100%;
+}
+footer .conteiner {
+  margin-top: -100vh;
 }
 /* form ===================== */
 .footer-basement {
@@ -433,7 +423,7 @@ li {
   justify-content: flex-end;
   width: 100%;
   text-align: right;
-  margin: 200px 125px 20px 0;
+  margin: 200px 0 0px;
   max-height: 80px;
   font-size: 2em;
 }
@@ -518,3 +508,48 @@ ul.submenu li a:hover i.fa-youtube::after {
 /*************************************************************/
 /* END FOOTER                                                    */
 /*************************************************************/
+@media all and (max-width: 768px) {
+  .conteiner-all_section-chenger img {
+    width: 6em;
+  }
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  g {
+    font-size: 150px;
+  }
+  .close-btn {
+    right: 0;
+  }
+  .menu__list a {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .footer-basement__social {
+    margin-top: 70px;
+  }
+  footer .conteiner {
+    margin-top: -80vh;
+  }
+  .conteiner-all_section-chenger img {
+    width: 7em;
+  }
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .forth_section-pillar .scale img {
+    width: 115px;
+    height: 145px;
+  }
+  .forth_section-pillar {
+    margin-left: 18px;
+  }
+  .footer-basement button {
+    font-size: 14px;
+    width: 9em;
+    margin-left: 7.5em;
+  }
+}
