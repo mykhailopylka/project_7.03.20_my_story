@@ -44,6 +44,7 @@ a {
   /* display: flex; */
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
   border-radius: 10px;
   /* border: 3px solid #e60023; */
 }
@@ -80,12 +81,16 @@ a {
 .menu.active {
   left: 0;
 }
+.invisible {
+  /* opacity: 0; */
+  background-color: red;
+}
 /* хрестик */
 .close-btn {
   width: 50px;
   height: 50px;
   position: absolute;
-  right: 7.8em;
+  right: 8.2em;
   top: 15px;
   cursor: pointer;
   border: 3px solid #fff;
@@ -254,25 +259,6 @@ a {
   margin-top: 0;
   flex-wrap: wrap;
 }
-/* .therd_section:hover {
-  background: rgba(77, 85, 71, 0.2);
-} */
-/* Ефект надання кольору фону на всі елементи до низу при наведенні **************************************************/
-/* .therd_section:hover ~ * {
-  background: rgba(77, 85, 71, 0.2);
-}
-.therd_section:hover:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(77, 85, 71, 0.2);
-  pointer-events: none;
-  z-index: -1;
-} */
 /* forth_section **************************************************/
 .forth_section {
   display: flex;
@@ -508,6 +494,194 @@ ul.submenu li a:hover i.fa-youtube::after {
 /*************************************************************/
 /* END FOOTER                                                    */
 /*************************************************************/
+/* 1980 */
+@media all and (max-width: 1980px) {
+  body {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  g {
+    font-size: 180px;
+  }
+  .close-btn {
+    right: 15.3em;
+  }
+  .menu__list a {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* footer */
+  .footer-basement__social {
+    margin-top: 180px;
+  }
+  footer .conteiner {
+    margin-top: -90vh;
+  }
+  /* регулювання розміру картинок */
+  .conteiner-all_section-chenger img {
+    width: 8.2em;
+  }
+  /* регулювання розміщення тексту 4-та секція */
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 80%;
+    padding-left: 60px;
+  }
+  .forth_section-pillar .scale img {
+    width: 188px;
+    height: 250px;
+  }
+  .forth_section-pillar {
+    margin-left: 52px;
+  }
+  .footer-basement button {
+    font-size: 16px;
+    width: 9em;
+    margin-left: 10.4em;
+  }
+}
+/* 1600 ================================= */
+@media all and (max-width: 1600px) {
+  body {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  g {
+    font-size: 180px;
+  }
+  .close-btn {
+    right: 8.3em;
+  }
+  .menu__list a {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* footer **********************************/
+  .footer-basement__social {
+    margin-top: 180px;
+  }
+  footer .conteiner {
+    margin-top: -90vh;
+  }
+  /* регулювання розміру картинок */
+  .conteiner-all_section-chenger img {
+    width: 8.2em;
+  }
+  /* регулювання розміщення тексту 4-та секція */
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 80%;
+    padding-left: 60px;
+  }
+  .forth_section-pillar .scale img {
+    width: 188px;
+    height: 250px;
+  }
+  .forth_section-pillar {
+    margin-left: 52px;
+  }
+  .footer-basement button {
+    font-size: 16px;
+    width: 9em;
+    margin-left: 10.4em;
+  }
+}
+/* 1200 =======================================*/
+@media all and (max-width: 1200px) {
+  body {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  g {
+    font-size: 180px;
+  }
+  .close-btn {
+    right: 10px;
+  }
+  .menu__list a {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* footer */
+  .footer-basement__social {
+    margin-top: 30px;
+  }
+  footer .conteiner {
+    margin-top: -90vh;
+  }
+  /* регулювання розміру картинок */
+  .conteiner-all_section-chenger img {
+    width: 8.2em;
+  }
+  /* регулювання розміщення тексту 4-та секція */
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 80%;
+    padding-left: 60px;
+  }
+  .forth_section-pillar .scale img {
+    width: 188px;
+    height: 250px;
+  }
+  .forth_section-pillar {
+    margin-left: 52px;
+  }
+  .footer-basement button {
+    font-size: 16px;
+    width: 9em;
+    margin-left: 10.4em;
+  }
+}
+/* 1024 =========================================*/
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  g {
+    font-size: 180px;
+  }
+  .close-btn {
+    right: 10px;
+  }
+  .menu__list a {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* регулювання розміру картинок */
+  .conteiner-all_section-chenger img {
+    width: 8em;
+  }
+  /* регулювання розміщення тексту 4-та секція */
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 80%;
+    padding-left: 60px;
+  }
+  .forth_section-pillar .scale img {
+    width: 156px;
+    height: 235px;
+  }
+  .forth_section-pillar {
+    margin-left: 52px;
+  }
+  .text_all_section-chenger {
+    max-width: 40%;
+  }
+  /* footer ==============================*/
+  .footer-basement__social {
+    margin-top: 70px;
+  }
+  footer .conteiner {
+    margin-top: -90vh;
+  }
+  .footer-basement button {
+    font-size: 16px;
+    width: 9em;
+    margin-left: 7em;
+  }
+}
+/* 768 ==========================================*/
 @media all and (max-width: 768px) {
   .conteiner-all_section-chenger img {
     width: 6em;
@@ -519,21 +693,31 @@ ul.submenu li a:hover i.fa-youtube::after {
   g {
     font-size: 150px;
   }
+  /* хрестик */
   .close-btn {
-    right: 0;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 15px;
+    padding: 2px 5px;
+    border: 2px solid #fff;
   }
+  .close-btn::after,
+  .close-btn::before {
+    width: 25px;
+    height: 3px;
+  }
+  /* регулювання ліній хрестика одна відносно іншої */
+  .close-btn::before {
+    bottom: 2.6px;
+  }
+  /* /хрестик ================= */
   .menu__list a {
     font-size: 24px;
     line-height: 36px;
   }
-  .footer-basement__social {
-    margin-top: 70px;
-  }
-  footer .conteiner {
-    margin-top: -80vh;
-  }
   .conteiner-all_section-chenger img {
-    width: 7em;
+    width: 6.83em;
   }
   .text_all_section-chenger-forth h2,
   .text_all_section-chenger-forth p {
@@ -544,6 +728,16 @@ ul.submenu li a:hover i.fa-youtube::after {
     width: 115px;
     height: 145px;
   }
+  .text_all_section-chenger {
+    max-width: 80%;
+  }
+  /* footer ======================== */
+  .footer-basement__social {
+    margin-top: 70px;
+  }
+  footer .conteiner {
+    margin-top: -80vh;
+  }
   .forth_section-pillar {
     margin-left: 18px;
   }
@@ -551,5 +745,155 @@ ul.submenu li a:hover i.fa-youtube::after {
     font-size: 14px;
     width: 9em;
     margin-left: 7.5em;
+  }
+}
+
+/* 640 */
+@media all and (max-width: 640px) {
+  .conteiner-all_section-chenger img {
+    width: 6em;
+  }
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #svgContainer {
+    width: 40em;
+  }
+  .close-btn {
+    right: 10px;
+  }
+  .menu__list a {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .footer-basement__social {
+    margin-top: 60px;
+  }
+  footer .conteiner {
+    margin-top: -80vh;
+  }
+  .conteiner-all_section-chenger img {
+    width: 5.3em;
+  }
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .forth_section-pillar .scale img {
+    width: 93px;
+    height: 145px;
+  }
+  .forth_section-pillar {
+    margin-left: 18px;
+  }
+  .footer-basement button {
+    font-size: 14px;
+    width: 9em;
+    margin-left: 7.5em;
+  }
+}
+/* 480 */
+@media all and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #svgContainer {
+    width: 40em;
+  }
+  .close-btn {
+    right: 10px;
+  }
+  .menu__list a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .text_all_section-chenger {
+    max-width: 80%;
+  }
+  .conteiner-all_section-chenger img {
+    width: 10em;
+  }
+  .text_all_section-chenger {
+    max-width: 80%;
+  }
+  /* footer  ====================== */
+  .footer-basement__social {
+    margin-top: 0px;
+  }
+  footer .conteiner {
+    margin-top: -55vh;
+  }
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .forth_section-pillar .scale img {
+    width: 93px;
+    height: 145px;
+  }
+  .forth_section-pillar {
+    margin-left: 18px;
+  }
+  .footer-basement button {
+    font-size: 12px;
+    width: 9em;
+    margin-left: 6em;
+  }
+  .footer-basement__text {
+    width: 80%;
+  }
+}
+/* 320 */
+@media all and (max-width: 480px) {
+  body {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #svgContainer {
+    width: 30em;
+  }
+  .close-btn {
+    right: 10px;
+  }
+  .menu__list a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .text_all_section-chenger {
+    max-width: 80%;
+  }
+  .conteiner-all_section-chenger img {
+    width: 6em;
+  }
+  /* footer  ====================== */
+  .footer-basement__social {
+    margin-top: 0px;
+  }
+  footer .conteiner {
+    margin-top: -55vh;
+  }
+  .text_all_section-chenger-forth h2,
+  .text_all_section-chenger-forth p {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .forth_section-pillar .scale img {
+    width: 93px;
+    height: 145px;
+  }
+  .forth_section-pillar {
+    margin-left: 18px;
+  }
+  .footer-basement button {
+    font-size: 12px;
+    width: 9em;
+    margin-left: 4em;
+  }
+  .footer-basement__text {
+    width: 80%;
   }
 }
